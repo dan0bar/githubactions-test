@@ -7,6 +7,10 @@ on:
     types:
       - completed
 
+  push:
+    branches:
+      - "**"
+
 jobs:
   notify:
     name: second-job
