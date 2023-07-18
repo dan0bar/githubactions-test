@@ -11,6 +11,9 @@ on:
     branches:
       - "**"
 
+  repository_dispatch:
+    types: [ test ]
+
 jobs:
   notify:
     name: second-job

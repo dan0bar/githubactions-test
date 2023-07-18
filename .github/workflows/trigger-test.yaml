@@ -1,8 +1,12 @@
 name: Trigger the ViewBuilder
 
 on:
-  repository_dispatch:
-    types: [test]
+#  repository_dispatch:
+#    types: [test]
+
+  push:
+    branches:
+      - "**"
 
 jobs:
   echo:
