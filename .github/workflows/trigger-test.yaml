@@ -1,0 +1,15 @@
+name: Trigger the ViewBuilder
+
+on:
+  repository_dispatch:
+    types: [test]
+
+jobs:
+  echo:
+    name: test-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo-text
+        shell: bash
+        run: echo "Test succeeded!"
+
